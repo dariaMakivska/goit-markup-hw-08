@@ -1,0 +1,189 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 580px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--acent-color);
+    }
+}
+
+.contact-form-text {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.contact-form-field {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--tittle-text-color);
+}
+
+.contact-form-input-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+}
+
+.contact-form-input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--acent-color);
+    }
+}
+
+.form-contact-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contact-form-input:hover + &,
+    .contact-form-input:focus + & {
+        fill: var(--acent-color);
+    }
+}
+
+.contact-form-message {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--acent-color);
+    }
+}
+
+.contact-form-checkbox-label {
+    font-size: 14px;
+    color: var(--tittle-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #212121;
+        border-color: var(--primary-text-color);
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+
+        .contact-form-checkbox:checked+& {
+            background-color: var(--acent-color);
+            border: var(--acent-color);
+            background-image: url('../images/svg/check_icon.svg');
+        }
+    }
+}
+
+.contact-form-link {
+    color: var(--acent-color);
+    letter-spacing: 0.03em;
+    margin-left: 4px;
+}
+
+.contact-form-submit-btn {
+    display: block;
+    min-width: 200px;
+    padding: 10px 56px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid var(--acent-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--light-color);
+    background-color: var(--acent-color);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--background-color-btn-colored);
+    }
+}
+
