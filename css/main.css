@@ -113,7 +113,7 @@ a {
   color: var(--logo-text-color);
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .nav-list {
     display: none;
   }
@@ -237,7 +237,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -330,6 +330,12 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
