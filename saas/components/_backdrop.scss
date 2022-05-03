@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
@@ -185,5 +185,24 @@
     &:focus {
         background-color: var(--background-color-btn-colored);
     }
+}
+
+@media screen and (min-width:0px) and (max-width:480px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+
+    .contact-form-text{
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .contact-form-checkbox-label {
+        font-size: 12px;
+        letter-spacing: 0.03em;
+        
+        
+}
 }
 

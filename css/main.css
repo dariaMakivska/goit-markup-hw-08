@@ -113,7 +113,7 @@ a {
   color: var(--logo-text-color);
 }
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767.9px) {
   .nav-list {
     display: none;
   }
@@ -135,7 +135,6 @@ a {
     left: 0;
     width: 100%;
     height: 100vh;
-    overflow: auto;
     background-color: var(--light-color);
     opacity: 0;
     visibility: hidden;
@@ -148,13 +147,16 @@ a {
     pointer-events: auto;
   }
   .mobile-menu__container {
-    position: relative;
+    position: fixed;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
     padding-right: 84px;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--light-color);
+    height: 100%;
+    overflow: auto;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -239,8 +241,8 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ececec;
   }
   .mobile-menu-btn {
@@ -286,7 +288,7 @@ a {
     background-color: var(--acent-color);
     border-radius: 2px;
     left: 0;
-    bottom: -32px;
+    bottom: -33px;
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -426,25 +428,16 @@ a {
 
 .main-section {
   background-color: var(--background-color-text);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
 }
 
 .main-section__title {
-  margin-left: 252px;
-  margin-right: 252px;
-  width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-color);
@@ -453,8 +446,6 @@ a {
 
 .main-section__btn {
   display: block;
-  margin-left: 500px;
-  margin-right: 500px;
   min-width: 200px;
   padding: 10px 16px;
   border: 1px solid var(--acent-color);
@@ -466,53 +457,116 @@ a {
   letter-spacing: 0.06em;
   color: var(--light-color);
   background-color: var(--acent-color);
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-section__btn:hover, .main-section__btn:focus {
-  background-color: var(--background-color-btn-colored);
+@media screen and (min-width: 0px) and (max-width: 767.9px) {
+  .main-section {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile_img/hero-mobile-image.jpg);
+    max-width: 767px;
+    height: 400px;
+  }
+  .main-section__title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+  .main-section__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .main-section {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet_img/hero-tablet-image.jpg);
+    max-width: 1199.5px;
+    height: 400px;
+  }
+  .main-section__title {
+    margin-left: 204px;
+    margin-right: 204px;
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
+  .main-section__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_img/bg.jpg);
+    max-width: 1600px;
+  }
+  .main-section__title {
+    margin-left: 252px;
+    margin-right: 252px;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .main-section__btn {
+    margin-left: 500px;
+    margin-right: 500px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .main-section__btn:hover, .main-section__btn:focus {
+    background-color: var(--background-color-btn-colored);
+  }
+}
+
+/*
 .decisions-list {
-  display: flex;
+    display: flex;
 }
 
 .decisions-list__item {
-  width: 270px;
-}
+    width: 270px;
 
-.decisions-list__item:not(:last-child) {
-  margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .decisions-list__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .decisions-list__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
 }
 
 .decisions-list__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--tittle-text-color);
-}
-
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
+} 
+*/
 .about {
   padding-top: 0;
 }
@@ -833,7 +887,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -1008,5 +1062,20 @@ a {
 
 .contact-form-submit-btn:hover, .contact-form-submit-btn:focus {
   background-color: var(--background-color-btn-colored);
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .contact-form-text {
+    text-align: center;
+    line-height: 30px;
+  }
+  .contact-form-checkbox-label {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,26 +1,15 @@
 .main-section {
     background-color: var(--background-color-text);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/main_img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
 }
 
 .main-section__title {
-    margin-left: 252px;
-    margin-right: 252px;
-    width: 696px;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-color);
@@ -29,8 +18,6 @@
 
 .main-section__btn {
     display: block;
-    margin-left: 500px;
-    margin-right: 500px;
     min-width: 200px;
     padding: 10px 16px;
     border: 1px solid var(--acent-color);
@@ -42,6 +29,85 @@
     letter-spacing: 0.06em;
     color: var(--light-color);
     background-color: var(--acent-color);
+}
+//0px-767px
+@media screen and (min-width:0px) and (max-width:767.9px) 
+{
+.main-section {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(/images/mobile_img/hero-mobile-image.jpg);
+    max-width: 767px;
+    height: 400px;
+}
+
+.main-section__title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+}
+
+.main-section__btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+//767px-1199px
+
+@media screen and (min-width:768px) and (max-width:1199.9px) {
+
+.main-section {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(/images/tablet_img/hero-tablet-image.jpg);
+    max-width: 1199.5px;
+    height: 400px;
+}
+
+.main-section__title {
+    margin-left: 204px;
+    margin-right: 204px;
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+}
+
+.main-section__btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (min-width:1200px)
+{
+.main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/main_img/bg.jpg);
+    max-width: 1600px;
+}
+
+.main-section__title {
+    margin-left: 252px;
+    margin-right: 252px;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+}
+
+.main-section__btn {
+    margin-left: 500px;
+    margin-right: 500px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -50,7 +116,8 @@
         background-color: var(--background-color-btn-colored);
     }
 }
-
+}
+/*
 .decisions-list {
     display: flex;
 }
@@ -88,4 +155,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--tittle-text-color);
-}
+} 
+*/
