@@ -17,7 +17,7 @@
 }
 
 
-// <480px
+// 0px-767px
 
 @media screen and (min-width:0px) and (max-width:767.9px)
 {
@@ -50,7 +50,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
 }
 
@@ -169,9 +169,9 @@
 }
 }
 
-//768px+
+// 768px-1199px
 
-@media screen and (min-width:768px) and (max-width: 1200px) 
+@media screen and (min-width:768px) and (max-width: 1199.9px) 
 {
 .header {
     padding-top: 20px;
