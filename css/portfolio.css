@@ -133,13 +133,14 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--light-color);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -147,7 +148,7 @@ a {
     pointer-events: auto;
   }
   .mobile-menu__container {
-    position: fixed;
+    position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -156,7 +157,6 @@ a {
     margin-right: auto;
     background-color: var(--light-color);
     height: 100%;
-    overflow: auto;
   }
   .mobile-menu__close-btn {
     position: absolute;
