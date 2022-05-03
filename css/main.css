@@ -208,6 +208,13 @@ a {
     display: flex;
     justify-content: space-between;
   }
+  .mobile-menu__social-item {
+    padding-right: 10px;
+  }
+  .mobile-menu__social-item:not(:first-child) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+  }
   .mobile-menu__contact-link-tel {
     font-weight: 500;
     font-size: 34px;
@@ -221,13 +228,6 @@ a {
     line-height: 28px;
     letter-spacing: 0.02em;
     color: var(--tittle-text-color);
-  }
-  .mobile-menu__social-item:not(:first-child) {
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 10px;
-  }
-  .mobile-menu__social-item:not(:first-child) {
-    padding-left: 10px;
   }
   .mobile-menu__social-link {
     font-weight: 500;
@@ -412,6 +412,9 @@ a {
   .contact__mail-icon,
   .contact__smartphone-icon {
     margin-right: 10px;
+  }
+  .contact__item {
+    margin-bottom: 0px;
   }
 }
 
