@@ -146,6 +146,8 @@ a {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    position: fixed;
+    bottom: 0px;
   }
   .mobile-menu__container {
     position: relative;
@@ -209,6 +211,7 @@ a {
   .mobile-menu__social-list {
     display: flex;
     justify-content: space-between;
+    width: 95%;
   }
   .mobile-menu__social-item {
     padding-right: 10px;
@@ -1095,7 +1098,7 @@ a {
   background-color: var(--background-color-btn-colored);
 }
 
-@media screen and (min-width: 0px) and (max-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767.9px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1106,7 +1109,6 @@ a {
   }
   .contact-form-checkbox-label {
     font-size: 12px;
-    letter-spacing: 0.03em;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -58,6 +58,8 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    position: fixed;
+    bottom: 0px;
 }
 
 .mobile-menu__container{
@@ -133,6 +135,7 @@
 .mobile-menu__social-list {
     display: flex;
     justify-content: space-between;
+    width: 95%;
 }
 
 .mobile-menu__social-item{
