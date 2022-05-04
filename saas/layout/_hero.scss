@@ -5,6 +5,7 @@
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+    background-size: cover;
 }
 
 
@@ -57,17 +58,30 @@
     letter-spacing: 0.03em;
     color: var(--tittle-text-color);
 }
+
+
 //0px-767px
 @media screen and (min-width:0px) and (max-width:767.9px) 
 {
+
 .main-section {
     padding-top: 118px;
     padding-bottom: 198px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/mobile_img/hero-mobile-image.jpg);
-    max-width: 767px;
     height: 400px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-section {
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url('../images/mobile_img/hero-mobile-image@2x.jpg');
+}
 }
 
 .section{
@@ -105,7 +119,6 @@
     text-align: center;
 
 }
-
 }
 
 
@@ -120,8 +133,18 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/tablet_img/hero-tablet-image.jpg);
-    max-width: 1199.5px;
     height: 400px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-section {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url('../images/tablet_img/hero-tablet-image@2x.jpg');
+    }
 }
 
 .main-section__title {
@@ -141,7 +164,6 @@
     padding-top: 60px;
 }
 
-
 .decisions-list {
     display: flex;
     flex-wrap: wrap;
@@ -149,34 +171,39 @@
     margin-top: -30px;
 }
 
-
 .decisions-list__item {
     width: 354px;
     margin-left: 30px;
     margin-bottom: 30px;
 }
 
-
 .decisions-list__wrapper {
     width: 354px;
 }
-
-
-
 }
 
 
 // 1200px+
 
-@media screen and (min-width:1200px)
-{
+@media screen and (min-width:1200px){
+
 .main-section {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/main_img/bg.jpg);
-    max-width: 1600px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-section {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url('../images/main_img/bg@2x.jpg');
+    }
 }
 
 .main-section__title {
@@ -214,5 +241,4 @@
 .decisions-list__wrapper {
     width: 270px;
 }
-
 }
