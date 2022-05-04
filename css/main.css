@@ -489,7 +489,7 @@ a {
   .main-section {
     padding-top: 118px;
     padding-bottom: 198px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile_img/hero-mobile-image.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile_img/hero-mobile-image.jpg);
     max-width: 767px;
     height: 400px;
   }
@@ -499,7 +499,7 @@ a {
   .main-section__title {
     margin-left: auto;
     margin-right: auto;
-    width: 360px;
+    width: 100%;
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
@@ -509,14 +509,14 @@ a {
     margin-right: auto;
   }
   .decisions-list__wrapper {
-    width: 450px;
+    width: 100%;
   }
   .decisions-list__item {
-    width: 270px;
+    width: 100%;
     padding-bottom: 30px;
   }
   .decisions-list__wrapper-text {
-    width: 450px;
+    width: 100%;
   }
   .decisions-list__title {
     text-align: center;
@@ -527,7 +527,7 @@ a {
   .main-section {
     padding-top: 118px;
     padding-bottom: 198px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet_img/hero-tablet-image.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet_img/hero-tablet-image.jpg);
     max-width: 1199.5px;
     height: 400px;
   }
