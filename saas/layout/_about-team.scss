@@ -12,19 +12,10 @@
     margin-bottom: 50px;
 }
 
-.section__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .section__item {
     background-color: var(--light-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-
-    &:not(:nth-child(4n)) {
-        margin-right: 30px;
-    }
 }
 
 .workers-wrapper {
@@ -52,11 +43,6 @@
     justify-content: center;
     margin-top: 16px;
 }
-
-.social-list__items:not(:last-child) {
-    margin-right: 10px;
-}
-
 .social-list__link {
     width: 44px;
     height: 44px;
@@ -64,20 +50,106 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: var(--acent-color);
-    }
 }
 
 .social-list__icons {
     fill: #afb1b8;
+
+}
+
+@media screen and (min-width:0px) and (max-width:767.9px) 
+{
+.section__title {
+    font-size: 28px;}
+
+.section__item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.workers-img{
+width: 100%;
+}
+
+.social-list__items {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.social-list__icons {
+    fill: #afb1b8;
+
+}
+}
+
+
+@media screen and (min-width:768px) and (max-width:1199.9px) {
+
+.section__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__item {
+    margin-bottom: 30px;
+}
+
+.section__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+}
+
+.workers-img {
+    width: 354px;
+    height: 374px;
+}
+
+
+.social-list__items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list__link:hover,
+:focus {
+    background-color: var(--acent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+
+}
+
+
+@media screen and (min-width:1200px) {
+
+.section__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__item:not(:nth-child(4n)) {
+        margin-right: 30px;
+
+    }
+
+
+.social-list__items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list__link:hover,
+:focus {
+    background-color: var(--acent-color); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.social-list__icons {
+
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .social-list__link:hover &,
     .social-list__link:focus & {
         fill: var(--light-color);
     }
+}
 }

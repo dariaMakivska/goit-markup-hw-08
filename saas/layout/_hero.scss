@@ -168,7 +168,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px;
 }
 
 .decisions-list__item {
@@ -192,7 +191,7 @@
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/main_img/bg.jpg);
+        url(../images/desctop_img/desctop-hero.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -202,7 +201,7 @@
     .main-section {
         background-image:linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url('../images/main_img/bg@2x.jpg');
+            url('../images/desctop_img/desctop-hero@2x.jpg');
     }
 }
 
