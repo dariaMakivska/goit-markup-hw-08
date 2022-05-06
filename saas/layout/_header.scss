@@ -1,3 +1,7 @@
+.header{
+    border-bottom: 1px solid #ececec;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -60,6 +64,7 @@
     pointer-events: auto;
     position: fixed;
     bottom: 0px;
+    z-index: 2;
 }
 
 .mobile-menu__container{
@@ -134,8 +139,6 @@
 
 .mobile-menu__social-list {
     display: flex;
-    justify-content: space-between;
-    width: 95%;
 }
 
 .mobile-menu__social-item{
@@ -179,7 +182,6 @@
 .header {
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ececec;
 }
 
 .mobile-menu-btn{
@@ -260,7 +262,6 @@
     display: flex;
     align-items: center;
     fill: var(--tittle-text-color);
-    margin-right: 30px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -303,7 +304,6 @@
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #ececec;
 }
 
 .logo {

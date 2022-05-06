@@ -102,6 +102,10 @@ a {
   }
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -155,6 +159,7 @@ a {
     pointer-events: auto;
     position: fixed;
     bottom: 0px;
+    z-index: 2;
   }
   .mobile-menu__container {
     position: relative;
@@ -217,8 +222,6 @@ a {
   }
   .mobile-menu__social-list {
     display: flex;
-    justify-content: space-between;
-    width: 95%;
   }
   .mobile-menu__social-item {
     padding-right: 10px;
@@ -253,7 +256,6 @@ a {
   .header {
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ececec;
   }
   .mobile-menu-btn {
     display: none;
@@ -321,7 +323,6 @@ a {
     display: flex;
     align-items: center;
     fill: var(--tittle-text-color);
-    margin-right: 30px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -351,7 +352,6 @@ a {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #ececec;
   }
   .logo {
     font-size: 26px;
@@ -438,7 +438,6 @@ a {
 
 .portfolio-btn-list {
   display: flex;
-  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -466,18 +465,6 @@ a {
 
 .portfolio-list:not(:last-child) {
   margin-right: 8px;
-}
-
-.examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.examples {
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .portfolio-examples-link {
@@ -537,6 +524,60 @@ a {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+}
+
+@media screen and (min-width: 0px) and (max-width: 767.9px) {
+  .portfolio-btn-list {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: left;
+  }
+  .portfolio-list:nth-last-child(n+2) {
+    margin-bottom: 15px;
+  }
+  .examples {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .examples-img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .portfolio-btn-list {
+    margin-bottom: 30px;
+  }
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .examples:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .examples:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .examples-title-text {
+    width: 354px;
+    height: 146px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-btn-list {
+    margin-bottom: 50px;
+  }
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .examples {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .footer {
@@ -619,7 +660,6 @@ a {
 }
 
 .form-input {
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -689,7 +729,7 @@ a {
   }
   .form-input {
     margin-bottom: 20px;
-    width: 450px;
+    width: 95vw;
   }
   .subscribe-btn-icon {
     margin-left: 10px;
@@ -772,6 +812,10 @@ a {
     text-transform: uppercase;
     color: var(--light-color);
     margin-bottom: 20px;
+  }
+  .form-input {
+    margin-bottom: 20px;
+    width: 358px;
   }
   .subscribe-btn {
     margin-left: 12px;
