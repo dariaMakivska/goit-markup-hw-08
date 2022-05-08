@@ -133,8 +133,8 @@ a {
   }
   .header {
     position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .logo {
     font-size: 24px;
@@ -208,6 +208,9 @@ a {
     color: var(--primary-text-color);
   }
   .mobile-menu__link:focus {
+    color: var(--acent-color);
+  }
+  .current {
     color: var(--acent-color);
   }
   .mobile-menu__nav-item:not(:last-child) {
@@ -416,7 +419,6 @@ a {
     display: flex;
     align-items: center;
     fill: var(--tittle-text-color);
-    margin-right: 30px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -432,6 +434,7 @@ a {
     margin-right: 10px;
   }
   .contact__item {
+    margin-right: 30px;
     margin-bottom: 0px;
   }
 }
@@ -532,12 +535,18 @@ a {
     margin-bottom: 40px;
     justify-content: left;
   }
-  .portfolio-list:nth-last-child(n+2) {
+  .portfolio-list {
     margin-bottom: 15px;
+  }
+  .portfolio-list:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
   .examples {
     margin-bottom: 30px;
     width: 100%;
+  }
+  .examples:last-child {
+    margin-bottom: 0;
   }
   .examples-img {
     width: 100%;
@@ -551,6 +560,7 @@ a {
   .examples-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .examples:not(:last-child) {
     margin-bottom: 30px;
@@ -559,8 +569,13 @@ a {
     margin-right: 30px;
   }
   .examples-title-text {
-    width: 354px;
-    height: 146px;
+    flex-grow: 1;
+    flex-basis: 354px;
+  }
+  .portfolio-examples-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -600,7 +615,6 @@ a {
 }
 
 .adress-list {
-  margin-top: 20px;
   font-style: normal;
 }
 
@@ -697,18 +711,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .footer-logo-margin {
-    margin-right: 163px;
-    margin-left: 163px;
+    text-align: center;
   }
   .logo-adress-footer {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   .adress-list {
-    margin-right: 122px;
-    margin-left: 122px;
     text-align: center;
+    margin-top: 20px;
   }
   .footer-list:not(:last-child) {
     margin-bottom: 8px;
@@ -717,7 +727,7 @@ a {
     text-align: center;
   }
   .join-footer {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   .social-list-footer {
     justify-content: center;
@@ -746,13 +756,10 @@ a {
   }
   .adress-join-wrapper {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-  }
-  .logo-adress-footer {
+    justify-content: space-around;
     text-align: center;
-    margin-right: 166px;
+    margin-bottom: 60px;
+    width: 100%;
   }
   .join-footer {
     text-align: center;
@@ -781,15 +788,14 @@ a {
   .footer-list:not(:last-child) {
     margin-bottom: 9px;
   }
-  .adress-join-wrapper {
-    display: flex;
-    align-items: baseline;
-  }
   .adress {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .adress:hover, .adress:focus {
     color: var(--acent-color);
+  }
+  .adress-list {
+    margin-top: 20px;
   }
   .join-footer {
     margin-right: 167px;

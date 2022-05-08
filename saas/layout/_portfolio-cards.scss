@@ -106,13 +106,21 @@
     justify-content: left;
 }
 
-.portfolio-list:nth-last-child(n+2) {
+.portfolio-list {
     margin-bottom: 15px;
+
+&:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
 }
 
 .examples{
     margin-bottom: 30px;
     width: 100%;
+
+&:last-child{
+    margin-bottom: 0;
+}
 }
 .examples-img{
     width: 100%;
@@ -130,6 +138,7 @@
 .examples-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .examples:not(:last-child){
@@ -141,10 +150,15 @@
 }
 
 .examples-title-text{
-    width: 354px;
-    height: 146px;
+    flex-grow: 1;
+    flex-basis: 354px;
 }
 
+.portfolio-examples-link{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 }
 

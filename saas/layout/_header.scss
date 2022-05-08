@@ -35,8 +35,8 @@
 
 .header{
     position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .logo {
@@ -123,6 +123,11 @@
         color: var(--acent-color);
     }
     }
+
+.current{
+    color: var(--acent-color);
+}
+
 
 .mobile-menu__nav-item:not(:last-child){
     margin-bottom: 32px;
@@ -380,7 +385,6 @@
     display: flex;
     align-items: center;
     fill: var(--tittle-text-color);
-    margin-right: 30px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -400,6 +404,7 @@
     margin-right: 10px;
 } 
 .contact__item{
+    margin-right: 30px;
     margin-bottom: 0px;
 }
 }

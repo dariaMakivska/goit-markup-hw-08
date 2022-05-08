@@ -9,7 +9,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-bottom: 50px;
 }
 
 .section__item {
@@ -59,8 +58,11 @@
 
 @media screen and (min-width:0px) and (max-width:767.9px) 
 {
+
 .section__title {
-    font-size: 28px;}
+    font-size: 28px;
+        margin-bottom: 30px;
+}
 
 .section__item:not(:last-child){
     margin-bottom: 30px;
@@ -72,7 +74,6 @@
 
 .social-list__items {
     margin-right: 10px;
-    margin-bottom: 30px;
 }
 
 .social-list__icons {
@@ -83,6 +84,11 @@
 
 
 @media screen and (min-width:768px) and (max-width:1199.9px) {
+
+.section__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
 
 .section__list {
     display: flex;
@@ -115,6 +121,10 @@
 
 
 @media screen and (min-width:1200px) {
+
+.section__title{
+    margin-bottom: 50px;
+}
 
 .section__list {
     display: flex;
