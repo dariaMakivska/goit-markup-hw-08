@@ -145,13 +145,10 @@
     margin-bottom: 30px;
 }
 
-.examples:nth-child(2n+1){
-    margin-right: 30px;
-}
 
 .examples-title-text{
     flex-grow: 1;
-    flex-basis: 354px;
+    width: 354px;
 }
 
 .portfolio-examples-link{
