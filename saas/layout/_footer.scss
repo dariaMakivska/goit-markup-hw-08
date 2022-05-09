@@ -167,24 +167,28 @@
 @media screen and (min-width:768px) and (max-width:1199.9px) {
 
     .section-footer {
-        padding-top: 65px;
+    padding-top: 65px;
     }
 
     .footer {
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .adress-join-wrapper{
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        margin-bottom: 60px;
-        width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 100%;
+    align-items: baseline;
 }
 
-    .join-footer {
+.adress-list{
+    margin-top: 20px;
+}
+
+.join-footer {
     text-align: center;
 }
 
@@ -209,6 +213,10 @@
 }
 
 @media screen and (min-width:1200px){
+
+.adress-join-wrapper{
+        display: flex;
+    }
 
 .logo-adress-footer {
     margin-right: 70px;

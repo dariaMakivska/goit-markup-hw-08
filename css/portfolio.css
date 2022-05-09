@@ -560,14 +560,16 @@ a {
   .examples-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
   }
-  .examples:not(:last-child) {
-    margin-bottom: 30px;
+  .examples {
+    flex-basis: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
   .examples-title-text {
     flex-grow: 1;
-    width: 354px;
   }
   .portfolio-examples-link {
     display: flex;
@@ -757,6 +759,10 @@ a {
     text-align: center;
     margin-bottom: 60px;
     width: 100%;
+    align-items: baseline;
+  }
+  .adress-list {
+    margin-top: 20px;
   }
   .join-footer {
     text-align: center;
@@ -778,6 +784,9 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
+  .adress-join-wrapper {
+    display: flex;
+  }
   .logo-adress-footer {
     margin-right: 70px;
     flex-grow: 1;

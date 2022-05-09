@@ -138,17 +138,18 @@
 .examples-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
-.examples:not(:last-child){
-    margin-bottom: 30px;
+.examples{
+    flex-basis: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
-
 
 .examples-title-text{
     flex-grow: 1;
-    width: 354px;
 }
 
 .portfolio-examples-link{
